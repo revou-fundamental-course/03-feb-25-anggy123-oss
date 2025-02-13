@@ -27,14 +27,14 @@
          <section>
             <form>
                 <div class="input-group">
-                    <label form="main-input">Celcius</label>
+                    <label for="display" form="main-input">Celcius (&deg;C)</label>
                     <input type="number" id="main-input">
                 </div>
 
                 <div class="button-group">
-                    <button class="bg-coral">Konversi</button>
-                    <button class="bg-palevioletred">Reset</button>
-                    <button class="bg-oranged">Reverse</button>
+                    <button class="bg-coral" type="button" onclick="validateForm()">Konversi</button>
+                    <button class="bg-palevioletred" onclick="reset()">Reset</button>
+                    <button class="bg-oranged" onclick="reverse()">Reverse</button>
                 </div>
             </form>
          </section>
@@ -42,7 +42,7 @@
          <!-- Hasil Konversi -->
          <section>
             <div class="input-group">
-                <label form="main-result">Fahrenheit</label>
+                <label form="main-result">Fahrenheit (&deg;F)</label>
                 <input type="text" id="main-result" readonly>
             </div>
          </section>
@@ -50,7 +50,7 @@
          <!-- Cara Konversi Suhu -->
           <section>
             <div class="input-group">
-                <label form="cara-konversi">Cara Konversi</label>
+                <label form="cara-konversi">Cara Kalkulasi</label>
                 <input type="text" id="cara-konversi" readonly>
             </div>
           </section>
@@ -64,8 +64,11 @@
             <hr>
 
             <article>
-                <p>Suhu <span class="remark">S</span></p>
-                <p>S<sub>(&deg;F)</sub>=</p>
+                <p>Suhu <span class="remark">S</span> dalam derajat Fahrenheit (&deg;F)
+                sama dengan suhu <span>S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.</p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> &times; 9/5) + 32 
+                <p> atau </p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> &times; 1,8) + 32</p>
             </article>
            </section>
     </main>
@@ -73,6 +76,8 @@
     <footer>
         Made by AnggyTobing
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>

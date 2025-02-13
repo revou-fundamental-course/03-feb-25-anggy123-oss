@@ -71,3 +71,10 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    main {
+        background-color: darksalmon;
+    }
+}
